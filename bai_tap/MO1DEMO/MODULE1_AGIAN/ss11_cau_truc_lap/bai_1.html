@@ -15,6 +15,20 @@
         }
         i++;
     }
+    //ìf (cha - con !== 25) {
+    alert("Tuổi cha phải hơn con đúng 25 tuổi.");
+    } else {
+        let year = 0;
+        while (cha + year !== 2 * (con + year)) {
+            year++;
+            if (year > 100) {
+                alert("Không tìm được kết quả hợp lý.");
+                break;
+            }
+        }
+        if (year <= 100) {
+            alert(year + " năm nữa thì tuổi cha sẽ gấp đôi tuổi con.");
+        }
 </script>
 
 </body>

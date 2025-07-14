@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABC</title>
+</head>
+<body>
+<script>
+    let dadAge = prompt("nhập tuổi cha");
+    let sonAge = prompt("nhập tuổi con");
+    if(dadAge - sonAge !==25){
+        alert("tuổi phải cách nhau 25 tuổi")
+    }else {
+        let year = 0;
+        while (dadAge  !== 2 * (sonAge + 25)) {
+            year++;
+            alert("sô tuổi" + dadAge);
+        }
+    }
+//et sott = prompt("Nhập số để chọn chức năng:\n1. Hiển thị danh sách sinh viên\n2. Thêm mới sinh viên\n3. Xóa sinh viên\n4. Thoát");
+    soThuTu = Number(soThuTu); // Chuyển thành số
+
+    function chucNang(sott) {
+        switch (sott) {
+            case 1:
+                alert("Hiển thị danh sách sinh viên");
+                break;
+            case 2:
+                alert("Thêm mới sinh viên");
+                break;
+            case 3:
+                alert("Xóa sinh viên");
+                break;
+            case 4:
+                alert("Thoát chương trình");
+                break;
+            default:
+                alert("Lựa chọn không hợp lệ");
+        }
+    }
+
+    chucNang(sott);
+</script>
+
+</body>
+</html>
